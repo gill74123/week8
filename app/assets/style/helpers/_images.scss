@@ -1,0 +1,17 @@
+.img-replace-text-header{
+    @include img-replace-text{
+        width: 96px;
+        height: 31px;
+        background-image: url(/assets/images/DOYOGA-logo.png);
+        background-size: cover;
+    }
+}
+
+.img-replace-text-header-footer{
+    @include img-replace-text{
+        width: 96px;
+        height: 31px;
+        background-image: url(/assets/images/DOYOGA.png);
+        background-size: cover;
+    }
+}

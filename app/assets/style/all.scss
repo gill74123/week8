@@ -1,6 +1,23 @@
+// 字型 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "./helpers/utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+// mixin
+@import "./mixin/images";
 
-@import './layout/index.scss'
+// helpers
+@import "./helpers/images";
+
+// config
+@import "./config/base";
+
+// components
+@import "./components/link";
+
+
+// pages
+@import './pages/index.scss'
