@@ -305,7 +305,7 @@ $body-text-align:           null !default;
 
 $link-color:                              $dark !default;
 $link-decoration:                         none !default;
-$link-shade-percentage:                   10% !default;
+$link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
 
@@ -1110,7 +1110,7 @@ $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
+$card-border-radius:                1rem !default; // 修改成16px
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;

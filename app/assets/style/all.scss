@@ -10,7 +10,7 @@
 @import "./mixin/images";
 
 // helpers
-@import "./helpers/images";
+@import "./helpers/bg-img";
 
 // config
 @import "./config/base";
@@ -18,6 +18,8 @@
 // components
 @import "./components/link";
 
+// utilities
+@import "./utilities/images";
 
 // pages
 @import './pages/index.scss'
