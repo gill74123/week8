@@ -1,7 +1,0 @@
-// 圖片取代文字
-@mixin img-replace-text {
-    text-indent: 101%;
-    white-space: nowrap;
-    overflow: hidden;
-    @content
-}
