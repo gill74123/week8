@@ -1,0 +1,101 @@
+//背景圖片
+.bg{
+    // index
+    &-banner{
+        width: 100%;
+        height: 582px;
+        background-image: url(/assets/images/bg-banner.jpeg);
+        background-size: cover;
+        background-position: center bottom;
+    }
+    &-teaching{
+        width: 100%;
+        height: 628px;
+        background-image: url(/assets/images/bg-teaching.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+// 圖片設計
+.img{
+    // layout
+    &-header-logo{
+        @include img-replace-text(96px, 31px){
+            background-image: url(/assets/images/DOYOGA-logo.png);
+        }
+    }
+    &-footer-logo{
+        @include img-replace-text(96px, 31px){
+            background-image: url(/assets/images/DOYOGA.png);
+        }
+    }
+
+    // index
+    &-feeling{
+        height: 420px;
+        @include media-breakpoint-up(md) {
+          height: 252px;
+        }
+        @include media-breakpoint-up(lg) {
+          height: 420px;
+        }
+    }
+    &-teacher-first{
+        width: 48px;
+        height: 48px;
+        @include media-breakpoint-up(md){
+          width: 94px;
+          height: 94px;
+        }
+    }
+    &-teacher{
+        width: 48px;
+        height: 48px;
+        @include media-breakpoint-up(md){
+          width: 68px;
+          height: 68px;
+        }
+    }
+    &-space{
+        height: 210px;
+        @include media-breakpoint-up(md){
+          height: 266px;
+        }
+        @include media-breakpoint-up(lg){
+          height: 444px;
+        }
+        &-sm{
+          height: 210px;
+          @include media-breakpoint-up(md){
+            height: 117px;
+          }
+          @include media-breakpoint-up(lg){
+            height: 207px;
+          }
+        }
+    }
+    &-course{
+        // width: 445px;
+        height: 445px;
+    }
+    &-plan{
+        height: 243px;
+        @include media-breakpoint-up(md){
+          height: 238px;
+          border-bottom-left-radius: 1rem;
+          border-top-left-radius: 1rem;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+        @include media-breakpoint-up(lg){
+          border-top-right-radius: 1rem;
+          border-bottom-left-radius: 0;
+        }
+    }
+    &-user{
+        width: 60px;
+        height: 60px;
+    }
+}
+

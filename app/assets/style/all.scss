@@ -10,13 +10,16 @@
 @import "./mixin/images";
 
 // helpers
-@import "./helpers/bg-img";
+@import "./helpers/images";
+@import "./helpers/swiper";
 
 // config
 @import "./config/base";
 
 // components
 @import "./components/link";
+@import "./components/btn";
+@import "./components/card";
 
 // utilities
 @import "./utilities/images";

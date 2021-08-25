@@ -1,0 +1,16 @@
+.card{
+    &-border{
+        border: 4px solid transparent;
+        &-white{
+            &:hover{
+                border: 4px solid $white;
+            }
+        }
+        &-third{
+            &:hover{
+                border: 4px solid $third;
+            }
+        }
+        
+    }
+}

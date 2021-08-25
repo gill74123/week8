@@ -1,0 +1,13 @@
+.btn{
+    &-secondary{
+        &:hover{
+            background-color: $primary;
+            color: $white !important;
+        }
+        // current 判斷
+        &--checked{
+            background-color: $primary;
+            color: $white !important;
+        }
+    }
+}
