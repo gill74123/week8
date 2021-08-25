@@ -29,5 +29,28 @@ $(document).ready(function () {
       clickable: true
     }
   });
+  var swiper = new Swiper(".chooseCourse", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    scrollbar: {
+      el: ".swiper-scrollbar"
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        grid: {
+          rows: 3
+        }
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
+  });
 });
 //# sourceMappingURL=all.js.map
