@@ -1,0 +1,72 @@
+---
+title: DOYOGA - 完成預約
+layout: ./app/layout.ejs
+engine: ejs
+current: reservation-complete
+---
+
+<!-- 立即預約 - 完成預約 -->
+<section class="pt-md-16 pt-13 mb-lg-11 mb-md-9 mb-11">
+    <div class="container">
+        <h2 class="fs-5 | text-center text-primary | mb-md-5 mb-8">立即預約</h2>
+        <div class="row">
+            <div class="col-md-2 offset-md-3 col-4">
+                <a href="#"
+                    class="btn btn-secondary text-primary rounded-4 | py-4 | w-100 | <%- current == 'reservation' ? 'btn-secondary--checked' : '' %> ">選擇方案</a>
+            </div>
+            <div class="col-md-2 col-4">
+                <a href="#" class="btn btn-secondary text-primary rounded-4 | py-4 | w-100">填寫資料</a>
+            </div>
+            <div class="col-md-2 col-4">
+                <a href="#" class="btn btn-secondary text-primary rounded-4 | py-4 | w-100 | active">完成預約</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 預約資訊 -->
+<section class="mb-8">
+    <div class="container">
+        <div class="d-flex flex-column align-items-center | mb-11">
+            <span class="material-icons-outlined | fs-8 | text-primary | mb-7">check_circle_outline</span>
+            <p class="fs-3 | text-primary">已完成預約，以下是您的預約資訊:</p>
+        </div>
+
+        <div class="row mb-8">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+                <div class="card | border-third rounded-2 mb-3">
+                    <button class="border-0 | p-0" type="button" data-bs-toggle="collapse" data-bs-target="#reserveInfoCollapse"
+                        aria-expanded="false" aria-controls="reserveInfoCollapse">
+                        <div
+                            class="card-header rounded-top | d-flex justify-content-between align-items-center | bg-primary | text-white | py-5 px-7">
+                            <h3 class="fs-2 fw-normal">預約資訊</h3>
+                            <span class="material-icons-outlined | fs-6">expand_more</span>
+                        </div>
+                    </button>
+                    <div class="collapse show | card-body | text-third | px-7" id="reserveInfoCollapse">
+                        <h3 class="card-title | fs-2 fw-medium | text-primary | mb-5">
+                            您預約的是
+                            <span class="fs-3 | text-third | ms-3">首次體驗課程-基礎</span>
+                        </h3>
+                        <ul class="card-text">
+                            <li class="mb-3">上課預約報到日：2021/07/21</li>
+                            <li class="mb-3">預約人：Joanne Chen</li>
+                            <li class="mb-3">年齡：18 歲</li>
+                            <li class="mb-3">性別：女</li>
+                            <li class="mb-3">電子信箱：example123@gmail.com</li>
+                            <li>手機號碼：0912-345-678</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 | text-primary">
+                <h3 class="fs-3 fw-normal | text-center mb-3">上課注意事項</h3>
+                <p class="mb-11">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。<br>如欲更改體驗時間請提前通知我們喔！</p>
+                <a href="index.html" class="btn btn-third | fs-3 | text-white | py-3 | w-100">返回首頁</a>
+            </div>
+        </div>
+    </div>
+</section>
