@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    DOYOGA - 填寫資料
+  </title>
+
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+  <!-- Material+Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- vanillajs-datepicker -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+
+  <!-- all.css -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+
+  <!-- Source Han San 字形載入 -->
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'hgt0kav',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <header class="position-relative | bg-secondary | py-7">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="img-header-logo"><a href="#">logo</a></h1>
+      <nav class="d-none d-lg-block | position-absolute start-50 translate-middle-x">
+        <ul class="d-flex align-items-center">
+          <li><a href="#" class="link link-dark">課程介紹</a></li>
+          <li><a href="#" class="link link-dark">瑜珈空間</a></li>
+          <li><a href="#" class="link link-dark">當月課表</a></li>
+        </ul>
+      </nav>
+      <div class="d-none d-lg-block">
+        <a href="reservation.html" class="btn btn-outline-primary rounded-4 | py-3 me-5">立即預約</a>
+        <a href="#" class="btn btn-outline-primary rounded-4 | py-3">聯絡我們</a>
+      </div>
+
+      <!-- mobile block collapse button -->
+      <span class="material-icons-outlined | fs-9 text-primary | d-lg-none" data-bs-toggle="collapse" href="#menuList"
+        role="button" aria-expanded="false" aria-controls="collapseExample">reorder</span>
+    </div>
+
+    <!-- mobile block collapse -->
+    <nav class="collapse" id="menuList">
+      <ul class="d-flex flex-column align-items-center">
+        <li class="w-100"><a href="#" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">課程介紹</a></li>
+        <li class="w-100"><a href="#" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">瑜珈空間</a></li>
+        <li class="w-100 mb-3"><a href="#" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">當月課表</a></li>
+        <li class="w-100"><a href="reservation.html" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">立即預約</a></li>
+        <li class="w-100"><a href="#" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">聯絡我們</a></li>
+
+        <!-- <li class="d-flex justify-content-center w-100"> 考慮用的樣式 哈-->
+          <!-- <a href="#" class="btn btn-outline-primary rounded-4 | fs-md-3 | py-3 me-5 w-25">立即預約</a> -->
+          <!-- <a href="#" class="btn btn-outline-primary rounded-4 | fs-md-3 | py-3 w-25">聯絡我們</a> -->
+        <!-- </li> -->
+      </ul>
+    </nav>
+  </header>
+
+  
+<!-- 立即預約 - 填寫資料 -->
+<section class="pt-md-16 pt-13 mb-lg-11 mb-md-8 mb-11">
+    <div class="container">
+        <h2 class="fs-5 | text-center text-primary | mb-md-5 mb-8">立即預約</h2>
+        <ul class="d-flex justify-content-center">
+            <li>
+                <a href="#"
+                    class="btn btn-secondary text-primary rounded-4 | px-lg-13 px-md-4 px-7 py-4 me-md-10 me-6">選擇方案</a>
+            </li>
+            <li>
+                <a href="#"
+                    class="btn btn-secondary text-primary rounded-4 | px-lg-13 px-md-4 px-7 py-4 me-md-10 me-6 | active">填寫資料</a>
+            </li>
+            <li>
+                <a href="#" class="btn btn-secondary text-primary rounded-4 | px-lg-13 px-md-4 px-7 py-4">完成預約</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- 您選擇的是 -->
+<div class="d-flex justify-content-center align-items-center | mb-lg-11 mb-8">
+    <p class="text-dark | me-5">您選擇的是</p>
+    <p class="fs-3 | text-third">首次體驗課程-基礎</p>
+</div>
+
+<section class="mb-lg-18 mb-17">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3">
+                <form class="text-dark" action="">
+                    <div class="mb-11">
+                        <p class="mb-5">1. 是否接觸過瑜珈?</p>
+                        <ul class="d-flex">
+                            <li>
+                                <input class="form-check-input | me-1" type="radio" name="tryYoga" id="yogaYesRadio"
+                                    value="ture" checked>
+                                <label class="form-check-label | me-11" for="yogaYesRadio">是</label>
+                            </li>
+                            <li>
+                                <input class="form-check-input | me-1" type="radio" name="tryYoga" id="yogaNoRadio"
+                                    value="false">
+                                <label class="form-check-label" for="yogaNoRadio">否</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mb-lg-5 mb-md-11 mb-5">
+                        <p class="mb-5">2. 想改善的生活問題?</p>
+                        <ul class="d-flex flex-wrap">
+                            <li class="mb-5">
+                                <input class="form-check-input | me-1" type="checkbox" value="肌耐力不足"
+                                    id="muscleEnduranceCheckbox">
+                                <label class="form-check-label | me-5" for="muscleEnduranceCheckbox">肌耐力不足</label>
+
+                            </li>
+                            <li class="mb-5">
+                                <input class="form-check-input | me-1" type="checkbox" value="柔軟度不佳"
+                                    id="softnessCheckbox">
+                                <label class="form-check-label | me-5" for="softnessCheckbox">柔軟度不佳</label>
+                            </li>
+                            <li class="mb-5">
+                                <input class="form-check-input | me-1" type="checkbox" value="壓力大"
+                                    id="pressureCheckbox">
+                                <label class="form-check-label | me-5" for="pressureCheckbox">壓力大</label>
+                            </li>
+                            <li class="mb-5">
+                                <input class="form-check-input | me-1" type="checkbox" value="姿勢不正"
+                                    id="postureCheckbox">
+                                <label class="form-check-label | me-11" for="postureCheckbox">姿勢不正</label>
+                            </li>
+                            <li class="mb-5">
+                                <input class="form-check-input | me-1" type="checkbox" value="睡眠品質差" id="sleepCheckbox">
+                                <label class="form-check-label | me-5" for="sleepCheckbox">睡眠品質差</label>
+                            </li>
+                            <li>
+                                <input class="form-check-input | me-1" type="checkbox" value="注意力不足"
+                                    id="attentionCheckbox">
+                                <label class="form-check-label" for="attentionCheckbox">注意力不足</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mb-11">
+                        <p class="mb-5">3. 每週累積運動量約為多少？</p>
+                        <ul class="d-flex flex-wrap">
+                            <li class="me-11 mb-1">
+                                <input class="form-check-input | me-1" type="radio" name="sportTime"
+                                    id="sportTime-1Radio" value="150分鐘以上" checked>
+                                <label class="form-check-label" for="sportTime-1Radio">150 分鐘以上</label>
+                            </li>
+                            <li class="mb-1">
+                                <input class="form-check-input | me-1" type="radio" name="sportTime"
+                                    id="sportTime-2Radio" value="75~150 分鐘">
+                                <label class="form-check-label" for="sportTime-2Radio">75~150 分鐘</label>
+                            </li>
+                            <li class="me-13">
+                                <input class="form-check-input | me-1" type="radio" name="sportTime"
+                                    id="sportTime-3Radio" value="30~75 分鐘">
+                                <label class="form-check-label" for="sportTime-3Radio">30~75 分鐘</label>
+                            </li>
+                            <li>
+                                <input class="form-check-input | me-1" type="radio" name="sportTime"
+                                    id="sportTime-4Radio" value="30 分鐘以下">
+                                <label class="form-check-label" for="sportTime-4Radio">30 分鐘以下</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mb-11">
+                        <p class="mb-1">4. 上課預約報到日</p>
+                        <p class="mb-3">若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</p>
+                        <input class="form-control w-50 | py-2 px-4" type="text" name="datepicker"
+                            placeholder="MM/DD/YYYY">
+                    </div>
+                    <div class="mb-11">
+                        <p class="mb-5">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+                        <ul>
+                            <li class="d-flex | mb-5">
+                                <div class="w-50 | me-1">
+                                    <label for="person">姓名</label>
+                                    <input class="form-control | py-2 px-4" type="text" name="person" id="person"
+                                        placeholder="請輸入您的姓名">
+                                </div>
+                                <div class="w-50 | ms-1">
+                                    <label for="age">年齡</label>
+                                    <input class="form-control | py-2 px-4" type="text" name="age" id="age"
+                                        placeholder="請輸入您的年齡">
+                                </div>
+                            </li>
+                            <li class="mb-5">
+                                <label for="sex" class="mb-3">性別</label>
+                                <select class="form-select w-25">
+                                    <option selected>--</option>
+                                    <option value="male"> 男</option>
+                                    <option value="female">女</option>
+                                    <option value="secret">保密</option>
+                                </select>
+                            </li>
+                            <li class="mb-5">
+                                <label for="email" class="mb-3">電子信箱</label>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="email@example.com">
+                            </li>
+                            <li>
+                                <label for="phoneNumber" class="mb-3">手機號碼</label>
+                                <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="0912-345-678">
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="submit" class="btn btn-third | text-white | py-3 mb-3 | w-100">送出</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="bg-primary | py-11">
+      <div class="container d-md-flex justify-content-between align-items-center | pb-8 pb-md-11">
+        <p class="fs-5 fw-regular fw-md-medium text-white | pb-3 pb-md-0">現在訂閱，獲得課程優惠碼！</p>
+        <div class="d-flex">
+          <input type="email" class="rounded-start border-0 | py-3 px-5" placeholder="輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button type="button" class="btn btn-third rounded-0 rounded-end | text-white" id="button-addon2">訂閱</button>
+        </div>
+      </div>
+
+      <hr class="bg-white | m-0 mb-11">
+
+      <div class="container d-flex justify-content-between | position-relative">
+        <div>
+          <div class="img-footer-logo | mb-3">footer-logo</div>
+          <ul>
+            <li class="mb-3"><a href="#" class="fw-light text-white | link link-white | p-0">課程介紹</a></li>
+            <li class="mb-3"><a href="#" class="fw-light text-white | link link-white | p-0">瑜珈空間</a></li>
+            <li class="mb-3 mb-md-0"><a href="#" class="fw-light text-white | link link-white | p-0">當月課表</a></li>
+            <li class="d-md-none">
+              <p class="d-md-none | text-white">© 2021. All Rights Reserved.</p>
+            </li>
+          </ul>
+        </div>
+        <ul class="d-flex">
+          <li><a href="#"><i class="fab fa-facebook | fs-4 text-white | link link-scale | p-0"></i></a></li>
+          <li class="ms-3"><a href="#"><i class="fab fa-instagram | fs-4 text-white | link link-scale | p-0"></i></a></li>
+          <li class="ms-3"><a href="#"><i class="fab fa-line | fs-4 text-white | link link-scale | p-0"></i></a></li>
+        </ul>
+        <p class="d-none d-md-block | text-white | position-absolute bottom-0 start-50 translate-middle-x">© 2021. All
+          Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- 右側釘選社群 -->
+    <ul class="d-none d-lg-block | position-fixed top-50 end-0 translate-middle-y | pe-1">
+      <li class="mb-3"><a href="#"><i class="fab fa-facebook | fs-8 text-primary"></i></a></li>
+      <li class="mb-3"><a href="#"><i class="fab fa-instagram | fs-8 text-primary"></i></a></li>
+      <li class=""><a href="#"><i class="fab fa-line | fs-8 text-primary"></i></a></li>
+    </ul>
+
+    <script src="./assets/js/vendors.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- vanillajs-datepicke -->
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+
+    <!-- all.js -->
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

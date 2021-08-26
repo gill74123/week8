@@ -19,6 +19,9 @@
   <!-- Swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+  <!-- vanillajs-datepicker -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+
   <!-- all.css -->
   <link rel="stylesheet" href="./assets/style/all.css">
 
@@ -82,7 +85,7 @@
         <ul class="d-flex justify-content-center">
             <li>
                 <a href="#"
-                    class="btn btn-secondary text-primary rounded-4 | px-lg-13 px-md-4 px-7 py-4 me-md-10 me-6 btn-secondary--checked  <%- current == 'reservation' ? 'btn-secondary--checked' : '' %> ">選擇方案</a>
+                    class="btn btn-secondary text-primary rounded-4 | px-lg-13 px-md-4 px-7 py-4 me-md-10 me-6 active <%- current == 'reservation' ? 'btn-secondary--checked' : '' %> ">選擇方案</a>
             </li>
             <li>
                 <a href="#"
@@ -159,7 +162,7 @@
     <div class="container">
         <div class="bg-primary | px-xl-12 px-md-7 px pt-lg-12 pb-lg-16 pt-11 pb-13 mb-lg-12 mb-11">
             <h2 class="fs-5 | text-center text-white | mb-lg-11 mb-8">選擇課程階級</h2>
-            <div class="swiper chooseCourse ">
+            <div class="swiper chooseCourseSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card card-border card-border-white | bg-third | text-white">
@@ -246,7 +249,7 @@
 
         <div class="row collapse multi-collapse" id="multiCollapse3">
             <div class="col-md-4 offset-md-4">
-                <a href="reservation-2.html" class="d-block | btn btn-third | text-white | mt-11">繼續預約</a>
+                <a href="reservation-form.html" class="d-block | btn btn-third | text-white | mt-11">繼續預約</a>
             </div>
         </div>
     </div>
@@ -296,6 +299,9 @@
 
     <!-- Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- vanillajs-datepicke -->
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
 
     <!-- all.js -->
     <script src="./assets/js/all.js"></script>
