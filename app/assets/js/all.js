@@ -32,7 +32,12 @@ $(document).ready(function () {
     },
   });
 
-  var swiper = new Swiper(".chooseCourse", {
+  // chooseCourseSwiper
+  var swiper = new Swiper(".chooseCourseSwiper", {
+    // 自動播放
+    // autoplay: true,
+    speed: 700,
+
     slidesPerView: 1,
     spaceBetween: 20,
     scrollbar: {
@@ -55,9 +60,16 @@ $(document).ready(function () {
         spaceBetween: 20,
       }
     },
-
-    
   });
+
+  // datepicker
+  const elem = document.querySelector('input[name="datepicker"]');
+  const datepicker = new Datepicker(elem, {
+  autohide: true,
+  buttonClass: 'btn text-primary',
+  nextArrow: '>',
+  prevArrow: '<'
+}); 
 
 
 });

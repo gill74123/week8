@@ -4,10 +4,15 @@
             background-color: $primary;
             color: $white !important;
         }
-        // current 判斷
+        // current 判斷,還沒成功
         &--checked{
             background-color: $primary;
             color: $white !important;
         }
+    }
+    // reservation的三個按鈕有用到
+    &.active{
+        background-color: $primary;
+        color: $white !important;
     }
 }
