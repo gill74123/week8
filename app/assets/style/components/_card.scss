@@ -14,4 +14,16 @@
         }
         
     }
+    
+    // course
+    &-tag{
+        top: -15px;
+        left: 24px;
+    }
+    &-teacher-h{
+        height: 418px;
+        @include media-breakpoint-up(lg){
+            height: 460px;
+        }
+    }
 }

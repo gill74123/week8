@@ -38,8 +38,6 @@ $(document).ready(function () {
     // autoplay: true,
     speed: 700,
 
-    slidesPerView: 1,
-    spaceBetween: 20,
     scrollbar: {
       el: ".swiper-scrollbar",
     },
@@ -47,6 +45,7 @@ $(document).ready(function () {
     breakpoints: {
       0: {
         slidesPerView: 1,
+        spaceBetween: 24,
         grid: {
           rows: 3,
         },
@@ -62,6 +61,58 @@ $(document).ready(function () {
     },
   });
 
+  // teacherSwiper
+  var swiper = new Swiper(".teacherSwiper", {
+    // 循環
+    loop: false,
+
+    // 自動播放
+    // autoplay: true,
+    speed: 700,
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        grid: {
+          rows: 4,
+        },
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    },
+  });
+
+  // recommendSwiper
+  var swiper = new Swiper(".recommendSwiper", {
+    // 循環
+    loop: false,
+
+    // 自動播放
+    // autoplay: true,
+    speed: 700,
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1.3,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      }
+    },
+  });
   // datepicker
   const elem = document.querySelector('input[name="datepicker"]');
   const datepicker = new Datepicker(elem, {

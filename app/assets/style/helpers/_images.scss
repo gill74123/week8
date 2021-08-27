@@ -97,5 +97,57 @@
         width: 60px;
         height: 60px;
     }
+
+    // course
+    &-course-top{
+      height: 218px;
+      @include media-breakpoint-up(md){
+        height: 341px;
+      }
+    }
+    &-course-info{
+      height: 196px;
+    }
+    &-course-teacher{
+      width: 96px;
+      height: 96px;
+    }
+    &-course-modal{
+      width: 165px;
+      height: 165px;
+      @include media-breakpoint-up(md){
+        width: 418px;
+        height: 418px;
+      }
+    }
+
+    // sourndings
+    &-sourndings-first{
+      height: 350px;
+      @include media-breakpoint-up(md){
+        height: 216px;
+      }
+      @include media-breakpoint-up(lg){
+        height: 350px;
+      }
+    }
+    &-sourndings{
+      height: 350px;
+      @include media-breakpoint-up(md){
+        height: 210px;
+      }
+      @include media-breakpoint-up(lg){
+        height: 350px;
+      }
+    }
+    &-sourndings-recommend{
+      height: 196px;
+      @include media-breakpoint-up(md){
+        height: 161px;
+      }
+      @include media-breakpoint-up(lg){
+        height: 196px;
+      }
+    }
 }
 
