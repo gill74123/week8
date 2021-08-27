@@ -34,14 +34,13 @@ $(document).ready(function () {
     // 自動播放
     // autoplay: true,
     speed: 700,
-    slidesPerView: 1,
-    spaceBetween: 20,
     scrollbar: {
       el: ".swiper-scrollbar"
     },
     breakpoints: {
       0: {
         slidesPerView: 1,
+        spaceBetween: 24,
         grid: {
           rows: 3
         }
@@ -53,6 +52,53 @@ $(document).ready(function () {
       992: {
         slidesPerView: 3,
         spaceBetween: 20
+      }
+    }
+  }); // teacherSwiper
+
+  var swiper = new Swiper(".teacherSwiper", {
+    // 循環
+    loop: false,
+    // 自動播放
+    // autoplay: true,
+    speed: 700,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        grid: {
+          rows: 4
+        }
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+    }
+  }); // recommendSwiper
+
+  var swiper = new Swiper(".recommendSwiper", {
+    // 循環
+    loop: false,
+    // 自動播放
+    // autoplay: true,
+    speed: 700,
+    breakpoints: {
+      0: {
+        slidesPerView: 1.3,
+        spaceBetween: 30
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 30
       }
     }
   }); // datepicker

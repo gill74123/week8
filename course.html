@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    DOYOGA - 課程介紹
+  </title>
+
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+  <!-- Material+Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- vanillajs-datepicker -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+
+  <!-- all.css -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+
+  <!-- Source Han San 字形載入 -->
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'hgt0kav',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <header class="position-relative | bg-secondary | py-7">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html">
+        <h1 class="img-header-logo">logo</h1>
+      </a>
+      <nav class="d-none d-lg-block | position-absolute start-50 translate-middle-x">
+        <ul class="d-flex align-items-center">
+          <li><a href="course.html" class="link link-dark">課程介紹</a></li>
+          <li><a href="sourndings.html" class="link link-dark">瑜珈空間</a></li>
+          <li><a href="#" class="link link-dark">當月課表</a></li>
+        </ul>
+      </nav>
+      <div class="d-none d-lg-block">
+        <a href="reservation.html" class="btn btn-outline-primary rounded-4 | py-3 me-5">立即預約</a>
+        <a href="#" class="btn btn-outline-primary rounded-4 | py-3">聯絡我們</a>
+      </div>
+
+      <!-- mobile block collapse button -->
+      <span class="material-icons-outlined | fs-9 text-primary | d-lg-none" data-bs-toggle="collapse" href="#menuList"
+        role="button" aria-expanded="false" aria-controls="collapseExample">reorder</span>
+    </div>
+
+    <!-- mobile block collapse -->
+    <nav class="collapse" id="menuList">
+      <ul class="d-flex flex-column align-items-center">
+        <li class="w-100"><a href="#" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">課程介紹</a></li>
+        <li class="w-100"><a href="#" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">瑜珈空間</a></li>
+        <li class="w-100 mb-3"><a href="#" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">當月課表</a></li>
+        <li class="w-100"><a href="reservation.html" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">立即預約</a></li>
+        <li class="w-100"><a href="#" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">聯絡我們</a></li>
+
+        <!-- <li class="d-flex justify-content-center w-100"> 考慮用的樣式 哈-->
+          <!-- <a href="#" class="btn btn-outline-primary rounded-4 | fs-md-3 | py-3 me-5 w-25">立即預約</a> -->
+          <!-- <a href="#" class="btn btn-outline-primary rounded-4 | fs-md-3 | py-3 w-25">聯絡我們</a> -->
+        <!-- </li> -->
+      </ul>
+    </nav>
+  </header>
+
+  
+<!-- 課程介紹 -->
+<section class="py-md-16 py-13">
+    <div class="container | text-primary">
+        <h2 class="fs-5 fw-normal | text-center | mb-lg-11 mb-8">課程介紹</h2>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-1 col-md-6 | mb-md-0 mb-3">
+                <div class="card">
+                    <img src="assets/images/bg-teaching.jpeg" class="card-img img-cover img-course-top"
+                        alt="teaching.jpeg">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h3 class="fs-5 fw-medium">本月限定課程 - 空中瑜珈</h3>
+                <div class="d-flex align-items-center | mb-5">
+                    <p class="text-third | me-3">授課老師：Carol Tang</p>
+                    <p class="bg-primary | fs-1 fw-light | text-white | rounded-4 | py-1 px-5">60 min</p>
+                </div>
+                <p class="mb-5">使用掛布懸掛在半空，進行哈達瑜珈體位法練習
+                    藉由地心引力的重力原理<br>鍛鍊核心肌群，舒緩脊椎壓力<br>訓練身體協調性，深層放鬆身體<br>課堂裡老師會視同學狀況安排教導倒立動作<br>對於不敢嘗試倒立的同學來說
+                    <br>藉由掛布的支持與保護<br>加上老師細心指導，讓同學能更快掌握
+                </p>
+                <a href="#" class="btn btn-third | fs-3 | text-white | py-3 px-5">立即預約</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 課程介紹-Info -->
+<section>
+    <div class="bg-third | py-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-7 | d-flex align-items-center">
+                    <div class="d-flex | w-75">
+                        <input class="border border-third | py-2 px-4 | w-75" type="text" name="course" id="course"
+                            placeholder="請輸入要搜尋的課程">
+                        <button class="btn btn-primary | d-block | border-third | text-white | py-2 px-4"
+                            type="button">搜尋</button>
+                    </div>
+                    <select class="form-select w-25" aria-label="Default select example">
+                        <option selected>全部課程</option>
+                        <option value="基礎 Basic">基礎 Basic</option>
+                        <option value="艾揚格 Iyengar">艾揚格 Iyengar</option>
+                        <option value="哈達 Hatha">哈達 Hatha</option>
+                        <option value="寰宇 Universal">寰宇 Universal</option>
+                        <option value="雙人飛行 Arco Yoga">雙人飛行 Arco Yoga</option>
+                        <option value="阿斯坦加 Ashtanga">阿斯坦加 Ashtanga</option>
+                        <option value="陰陽 Yin Yang">陰陽 Yin Yang</option>
+                        <option value="香氛 Aroma Yoga">香氛 Aroma Yoga</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-bottom border-primary | pb-lg-16 pt-md-12 pb-13 pt-11">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 | mb-lg-0 mb-md-12 mb-11">
+                    <div class="row gy-lg-7 gy-md-10 gy-7">
+                        <div class="col-lg-7 col-md-6">
+                            <div class="card | position-relative | text-white" type="button" data-bs-toggle="modal"
+                                data-bs-target="#courseDetailModal">
+                                <img src="assets/images/card-4.jpg" class="card-img img-cover img-course-info"
+                                    alt="card-4.jpg">
+                                <div class="card-img-overlay | d-flex flex-column justify-content-end | p-8">
+                                    <h4 class="card-title | fs-5 fw-medium">基礎 Basic</h4>
+                                    <p class="card-text">授課老師：Carol Tang</p>
+                                </div>
+                                <p
+                                    class="card-tag position-absolute | bg-third | rounded-4 | fs-1 fw-light | py-1 px-5">
+                                    60 min</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="card | position-relative | text-white">
+                                <img src="assets/images/card-5.jpg" class="card-img img-cover img-course-info"
+                                    alt="card-5.jpg">
+                                <div class="card-img-overlay | d-flex flex-column justify-content-end | p-8">
+                                    <h4 class="card-title | fs-5 fw-medium">艾揚格 Iyengar</h4>
+                                    <p class="card-text">授課老師：Kanae</p>
+                                </div>
+                                <p
+                                    class="card-tag position-absolute | bg-third | rounded-4 | fs-1 fw-light | py-1 px-5">
+                                    60 min</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="card | position-relative | text-white">
+                                <img src="assets/images/card-6.jpg" class="card-img img-cover img-course-info"
+                                    alt="card-6.jpg">
+                                <div class="card-img-overlay | d-flex flex-column justify-content-end | p-8">
+                                    <h4 class="card-title | fs-5 fw-medium">哈達 Hatha</h4>
+                                    <p class="card-text">授課老師：Kuzuha</p>
+                                </div>
+                                <p
+                                    class="card-tag position-absolute | bg-third | rounded-4 | fs-1 fw-light | py-1 px-5">
+                                    60 min</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="card | position-relative | text-white">
+                                <img src="assets/images/card-7.jpg" class="card-img img-cover img-course-info"
+                                    alt="card-7.jpg">
+                                <div class="card-img-overlay | d-flex flex-column justify-content-end | p-8">
+                                    <h4 class="card-title | fs-5 fw-medium">寰宇 Universal</h4>
+                                    <p class="card-text">授課老師：Kuzuha</p>
+                                </div>
+                                <p
+                                    class="card-tag position-absolute | bg-third | rounded-4 | fs-1 fw-light | py-1 px-5">
+                                    60 min</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="card | position-relative | text-white">
+                                <img src="assets/images/card-10.jpg" class="card-img img-cover img-course-info"
+                                    alt="card-10.jpg">
+                                <div class="card-img-overlay | d-flex flex-column justify-content-end | p-8">
+                                    <h4 class="card-title | fs-5 fw-medium">雙人飛行 Arco Yoga</h4>
+                                    <p class="card-text">雙人飛行 Arco Yoga</p>
+                                </div>
+                                <p
+                                    class="card-tag position-absolute | bg-third | rounded-4 | fs-1 fw-light | py-1 px-5">
+                                    60 min</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="card | position-relative | text-white">
+                                <img src="assets/images/card-12.jpg" class="card-img img-cover img-course-info"
+                                    alt="card-12.jpg">
+                                <div class="card-img-overlay | d-flex flex-column justify-content-end | p-8">
+                                    <h4 class="card-title | fs-5 fw-medium">阿斯坦加 Ashtanga</h4>
+                                    <p class="card-text">授課老師：Kanae</p>
+                                </div>
+                                <p
+                                    class="card-tag position-absolute | bg-third | rounded-4 | fs-1 fw-light | py-1 px-5">
+                                    60 min</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="card | position-relative | text-white">
+                                <img src="assets/images/card-11.jpg" class="card-img img-cover img-course-info"
+                                    alt="card-11.jpg">
+                                <div class="card-img-overlay | d-flex flex-column justify-content-end | p-8">
+                                    <h4 class="card-title | fs-5 fw-medium">陰陽 Yin Yang</h4>
+                                    <p class="card-text">授課老師：Asa Chen</p>
+                                </div>
+                                <p
+                                    class="card-tag position-absolute | bg-third | rounded-4 | fs-1 fw-light | py-1 px-5">
+                                    60 min</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="card | position-relative | text-white">
+                                <img src="assets/images/card-1.jpg" class="card-img img-cover img-course-info"
+                                    alt="card-1.jpg">
+                                <div class="card-img-overlay | d-flex flex-column justify-content-end | p-8">
+                                    <h4 class="card-title | fs-5 fw-medium">香氛 Aroma Yoga</h4>
+                                    <p class="card-text">授課老師：Asa Chen</p>
+                                </div>
+                                <p
+                                    class="card-tag position-absolute | bg-third | rounded-4 | fs-1 fw-light | py-1 px-5">
+                                    60 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 | text-primary">
+                    <h5 class="fs-3 fw-normal | mb-3">DOYOGA 上課須知：</h5>
+                    <ul>
+                        <li class="mb-1">請攜帶適當的瑜珈墊和一條長毛巾配合課程使用。</li>
+                        <li class="mb-1">運動中請穿著有彈性、吸汗、透氣為原則的衣物，盡量穿著較貼身的運動衣，以便教練指導與自我矯正。</li>
+                        <li class="mb-1">運動中切記補充適當的水分、保持腹式呼吸，以鼻吸氣，以口呼氣為原則。</li>
+                        <li class="mb-1">運動中請保持微收小腹的原則，肩膀放鬆、頭頂向上延伸，請跟隨教練指示，配合呼吸一步步的確實練習。</li>
+                        <li>運動過程中若感到任何不適，請馬上停止且與老師商量討論。 若懷孕或特殊疾病請先告知。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- courseDetailModal -->
+<div class="modal fade" id="courseDetailModal" tabindex="-1" aria-labelledby="courseDetailModalLabel"
+    aria-hidden="true">
+    <div class=" modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content card | border-0 | bg-third">
+            <div class="modal-body | p-lg-15 p-md-8 p-5">
+                <div class="container p-0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-5 | d-flex justify-content-center">
+                            <img src="assets/images/bg-teaching.jpeg" class="img-course-modal card-img img-cover" alt="bg-teaching.jpeg">
+                        </div>
+                        <div class="col-lg-6 col-md-7 | text-white">
+                            <h4 class="fs-5 fw-medium">基礎 Basic</h4>
+                            <div class="d-flex align-items-center | mb-5">
+                                <p class="me-3">授課老師：Carol Tang</p>
+                                <p class="bg-primary | fs-1 fw-light | rounded-4 | py-1 px-5">60 min</p>
+                            </div>
+                            <p class="mb-5">使用掛布懸掛在半空，進行哈達瑜珈體位法練習 藉由地心引力的重力原理，鍛鍊核心肌群，舒緩脊椎壓力。<br>訓練身體協調性，深層放鬆身體。<br>課堂裡老師會視同學狀況安排教導倒立動作，對於不敢嘗試倒立的同學來說，藉由掛布的支持與保護，加上老師細心指導，讓同學能更快掌握。</p>
+                            <a href="#" class="btn btn-secondary | fs-3 | text-primary | py-3 px-5">立即預約</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 師資介紹 -->
+<section class="pt-lg-12 pb-lg-21 pt-11 pb-17">
+    <div class="container">
+        <h2 class="fs-5 fw-normal | text-center text-primary | mb-lg-11 mb-8">師資介紹</h2>
+
+        <div class="swiper teacherSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card card-teacher-h | bg-third | text-white | mt-13">
+                        <div class="card-body | position-relative | p-8 pt-15">
+                            <img src="assets/images/teacher-1.png"
+                                class="position-absolute top-0 start-50 translate-middle | img-course-teacher | border border-4 rounded-circle border-primary"
+                                alt="teacher-1.png">
+                            <h5 class="card-title | text-center | mb-1">Carol Tang 老師</h5>
+                            <h6 class="card-subtitle | text-center | mb-5">教學經歷 10 年</h6>
+                            <p class="card-text | mb-5">“因為瑜珈讓我重新認識自己的身體，也讓我有了不一樣的人生。 我希望能跟學生們分享瑜珈的好，讓大
+                                家能藉由瑜珈看見自己的內在與潛能， 並將瑜珈自然的融入自己的生活中。”</p>
+                            <ul class="card-text">
+                                <li>・協會認證艾揚格瑜珈老師</li>
+                                <li>・2010 年完成四年的艾揚格師資培訓</li>
+                                <li>・2020 取得艾揚格瑜珈高階認證</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-teacher-h | bg-primary | text-white | mt-13">
+                        <div class="card-body | position-relative | p-8 pt-15">
+                            <img src="assets/images/teacher-2.png"
+                                class="position-absolute top-0 start-50 translate-middle | img-course-teacher | border border-4 rounded-circle border-third"
+                                alt="teacher-2.png">
+                            <h5 class="card-title | text-center | mb-1">Kanae 老師</h5>
+                            <h6 class="card-subtitle | text-center | mb-5">教學經歷 3 年</h6>
+                            <p class="card-text | mb-5">
+                                “希望每個人透過觀察，感受在在進入動作，連接陰與陽，內和外，呼和吸的方式來更了解瑜珈練習的觀點，每個​動作都帶著呼吸和順位，在平衡心理和生理的狀況下以安全和簡化的技巧進入瑜珈姿勢，帶著放鬆的心情，享受瑜珈和生命的喜悅，並樂在其​中。”
+                            </p>
+                            <ul class="card-text">
+                                <li>・美國瑜珈聯盟 RYT200 小時師資認證</li>
+                                <li>・自然呼吸瑜珈會館開授倒立研習</li>
+                                <li>・簡善琳瑜珈會館開授倒立研習</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-teacher-h | bg-third | text-white | mt-13">
+                        <div class="card-body | position-relative | p-8 pt-15">
+                            <img src="assets/images/teacher-4.png"
+                                class="position-absolute top-0 start-50 translate-middle | img-course-teacher | border border-4 rounded-circle border-primary"
+                                alt="teacher-4.png">
+                            <h5 class="card-title | text-center | mb-1">Kuzuha 老師</h5>
+                            <h6 class="card-subtitle | text-center | mb-5">教學經歷 3 年</h6>
+                            <p class="card-text | mb-5">“瑜珈是一種生活態度， 學習平衡不強求，堅持不放棄， 修煉心靈活在當下。”</p>
+                            <ul class="card-text">
+                                <li>・美國瑜珈聯盟 RYT200 小時師資認證</li>
+                                <li>・自然呼吸瑜珈會館開授倒立研習</li>
+                                <li>・簡善琳瑜珈會館開授倒立研習</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card card-teacher-h | bg-primary | text-white | mt-13">
+                        <div class="card-body | position-relative | p-8 pt-15">
+                            <img src="assets/images/teacher-3.png"
+                                class="position-absolute top-0 start-50 translate-middle | img-course-teacher | border border-4 rounded-circle border-third"
+                                alt="teacher-3.png">
+                            <h5 class="card-title | text-center | mb-1">Kuzuha 老師</h5>
+                            <h6 class="card-subtitle | text-center | mb-5">教學經歷 3 年</h6>
+                            <p class="card-text | mb-5">“瑜珈是一種生活態度， 學習平衡不強求，堅持不放棄， 修煉心靈活在當下。”</p>
+                            <ul class="card-text">
+                                <li>・自然呼吸瑜珈會館開授倒立研習</li>
+                                <li>・簡善琳瑜珈會館開授倒立研習</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+    <footer class="bg-primary | py-11">
+      <div class="container d-md-flex justify-content-between align-items-center | pb-8 pb-md-11">
+        <p class="fs-5 fw-regular fw-md-medium text-white | pb-3 pb-md-0">現在訂閱，獲得課程優惠碼！</p>
+        <div class="d-flex">
+          <input type="email" class="rounded-start border-0 | py-3 px-5" placeholder="輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button type="button" class="btn btn-third rounded-0 rounded-end | text-white" id="button-addon2">訂閱</button>
+        </div>
+      </div>
+
+      <hr class="bg-white | m-0 mb-11">
+
+      <div class="container d-flex justify-content-between | position-relative">
+        <div>
+          <div class="img-footer-logo | mb-3">footer-logo</div>
+          <ul>
+            <li class="mb-3"><a href="#" class="fw-light text-white | link link-white | p-0">課程介紹</a></li>
+            <li class="mb-3"><a href="#" class="fw-light text-white | link link-white | p-0">瑜珈空間</a></li>
+            <li class="mb-3 mb-md-0"><a href="#" class="fw-light text-white | link link-white | p-0">當月課表</a></li>
+            <li class="d-md-none">
+              <p class="d-md-none | text-white">© 2021. All Rights Reserved.</p>
+            </li>
+          </ul>
+        </div>
+        <ul class="d-flex">
+          <li><a href="#"><i class="fab fa-facebook | fs-4 text-white | link link-scale | p-0"></i></a></li>
+          <li class="ms-3"><a href="#"><i class="fab fa-instagram | fs-4 text-white | link link-scale | p-0"></i></a></li>
+          <li class="ms-3"><a href="#"><i class="fab fa-line | fs-4 text-white | link link-scale | p-0"></i></a></li>
+        </ul>
+        <p class="d-none d-md-block | text-white | position-absolute bottom-0 start-50 translate-middle-x">© 2021. All
+          Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- 右側釘選社群 -->
+    <ul class="d-none d-lg-block | position-fixed top-50 end-0 translate-middle-y | pe-1">
+      <li class="mb-3"><a href="#"><i class="fab fa-facebook | fs-8 text-primary"></i></a></li>
+      <li class="mb-3"><a href="#"><i class="fab fa-instagram | fs-8 text-primary"></i></a></li>
+      <li class=""><a href="#"><i class="fab fa-line | fs-8 text-primary"></i></a></li>
+    </ul>
+
+    <script src="./assets/js/vendors.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Datepicker -->
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+
+    <!-- all.js -->
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
