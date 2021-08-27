@@ -41,7 +41,7 @@
 <body>
   <header class="position-relative | bg-secondary | py-7">
     <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="img-header-logo"><a href="#">logo</a></h1>
+      <h1 class="img-header-logo"><a href="index.html">logo</a></h1>
       <nav class="d-none d-lg-block | position-absolute start-50 translate-middle-x">
         <ul class="d-flex align-items-center">
           <li><a href="#" class="link link-dark">課程介紹</a></li>
@@ -81,30 +81,29 @@
 <section class="pt-md-16 pt-13 mb-lg-11 mb-md-8 mb-11">
     <div class="container">
         <h2 class="fs-5 | text-center text-primary | mb-md-5 mb-8">立即預約</h2>
-        <ul class="d-flex justify-content-center">
-            <li>
+        <div class="row">
+            <div class="col-md-2 offset-md-3 col-4">
                 <a href="#"
-                    class="btn btn-secondary text-primary rounded-4 | px-lg-13 px-md-4 px-7 py-4 me-md-10 me-6">選擇方案</a>
-            </li>
-            <li>
+                    class="btn btn-secondary text-primary rounded-4 | py-4 | w-100 | active <%- current == 'reservation' ? 'btn-secondary--checked' : '' %> ">選擇方案</a>
+            </div>
+            <div class="col-md-2 col-4">
                 <a href="#"
-                    class="btn btn-secondary text-primary rounded-4 | px-lg-13 px-md-4 px-7 py-4 me-md-10 me-6 | active">填寫資料</a>
-            </li>
-            <li>
-                <a href="#" class="btn btn-secondary text-primary rounded-4 | px-lg-13 px-md-4 px-7 py-4">完成預約</a>
-            </li>
-        </ul>
+                    class="btn btn-secondary text-primary rounded-4 | py-4 | w-100">填寫資料</a>
+            </div>
+            <div class="col-md-2 col-4">
+                <a href="#" class="btn btn-secondary text-primary rounded-4 | py-4 | w-100">完成預約</a>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- 您選擇的是 -->
-<div class="d-flex justify-content-center align-items-center | mb-lg-11 mb-8">
-    <p class="text-dark | me-5">您選擇的是</p>
-    <p class="fs-3 | text-third">首次體驗課程-基礎</p>
-</div>
-
+<!-- 表單 -->
 <section class="mb-lg-18 mb-17">
     <div class="container">
+        <div class="d-flex justify-content-center align-items-center | mb-lg-11 mb-8">
+            <p class="text-dark | me-5">您選擇的是</p>
+            <p class="fs-3 | text-third">首次體驗課程-基礎</p>
+        </div>
         <div class="row">
             <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3">
                 <form class="text-dark" action="">
@@ -223,7 +222,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button type="submit" class="btn btn-third | text-white | py-3 mb-3 | w-100">送出</button>
+                    <a href="reservation-complete.html" type="submit" class="btn btn-third | text-white | py-3 mb-3 | w-100">送出</a>
                 </form>
             </div>
         </div>
@@ -275,7 +274,7 @@
     <!-- Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- vanillajs-datepicke -->
+    <!-- Datepicker -->
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
 
     <!-- all.js -->
