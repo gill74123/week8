@@ -17646,7 +17646,7 @@ fieldset:disabled .btn {
 .bg-banner {
   width: 100%;
   height: 582px;
-  background-image: url(/assets/images/bg-banner.jpeg);
+  background-image: url(../images/bg-banner.jpeg);
   background-size: cover;
   background-position: center bottom;
 }
@@ -17654,7 +17654,7 @@ fieldset:disabled .btn {
 .bg-teaching {
   width: 100%;
   height: 628px;
-  background-image: url(/assets/images/bg-teaching.jpeg);
+  background-image: url(../images/bg-teaching.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -17666,7 +17666,7 @@ fieldset:disabled .btn {
   white-space: nowrap;
   overflow: hidden;
   background-size: cover;
-  background-image: url(/assets/images/DOYOGA-logo.png);
+  background-image: url(../images/DOYOGA-logo.png);
 }
 
 .img-footer-logo {
@@ -17676,7 +17676,7 @@ fieldset:disabled .btn {
   white-space: nowrap;
   overflow: hidden;
   background-size: cover;
-  background-image: url(/assets/images/DOYOGA.png);
+  background-image: url(../images/DOYOGA.png);
 }
 
 .img-feeling {
