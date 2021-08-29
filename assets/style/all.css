@@ -17645,10 +17645,10 @@ fieldset:disabled .btn {
 
 .bg-banner {
   width: 100%;
-  height: 582px;
   background-image: url(../images/bg-banner.jpeg);
   background-size: cover;
   background-position: center bottom;
+  background-attachment: fixed;
 }
 
 .bg-teaching {
@@ -17878,6 +17878,11 @@ fieldset:disabled .btn {
   color: #C0A4A5;
 }
 
+.timeline.active {
+  background-color: #907A7B !important;
+  color: #fff !important;
+}
+
 h1, .h1, .h1, h2, .h2, .h2, h3, .h3, .h3, h4, .h4, .h4, h5, .h5, .h5, h6, .h6, .h6, p {
   margin: 0;
   padding: 0;
@@ -17948,16 +17953,6 @@ dl {
   color: #fff !important;
 }
 
-.btn-secondary--checked {
-  background-color: #907A7B;
-  color: #fff !important;
-}
-
-.btn.active {
-  background-color: #907A7B;
-  color: #fff !important;
-}
-
 .card-border {
   border: 4px solid transparent;
 }
@@ -17985,29 +17980,45 @@ dl {
   }
 }
 
+.card-map {
+  height: 195px;
+}
+
+@media (min-width: 768px) {
+  .card-map {
+    height: 323px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-map {
+    height: 360px;
+  }
+}
+
 .form-control {
   color: #C0A4A5;
   border: 1px solid #C0A4A5;
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #907A7B;
+  color: #C0A4A5;
 }
 
 .form-control::-moz-placeholder {
-  color: #907A7B;
+  color: #C0A4A5;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #907A7B;
+  color: #C0A4A5;
 }
 
 .form-control::-ms-input-placeholder {
-  color: #907A7B;
+  color: #C0A4A5;
 }
 
 .form-control::placeholder {
-  color: #907A7B;
+  color: #C0A4A5;
 }
 
 .img-cover {
