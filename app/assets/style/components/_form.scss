@@ -1,8 +1,7 @@
 .form-control{
-    // reservation-form
     color: $third;
     border: 1px solid $third;
     &::placeholder{
-        color: $primary;
+        color: $third;
     }
 }

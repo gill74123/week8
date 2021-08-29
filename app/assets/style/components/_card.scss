@@ -1,5 +1,5 @@
 .card{
-    // reservation
+    // reservation，還需要研究一下
     &-border{
         border: 4px solid transparent;
         &-white{
@@ -24,6 +24,17 @@
         height: 418px;
         @include media-breakpoint-up(lg){
             height: 460px;
+        }
+    }
+
+    // contactUs
+    &-map{
+        height: 195px;
+        @include media-breakpoint-up(md){
+            height: 323px;
+        }
+        @include media-breakpoint-up(lg){
+            height: 360px;
         }
     }
 }
