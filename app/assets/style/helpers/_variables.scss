@@ -226,7 +226,7 @@ $enable-grid-classes:         true !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default;  // NEW
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -273,6 +273,8 @@ $spacers: (
   19: $spacer * 6.875, // 110px
   20: $spacer * 6.9375, // 111px
   21: $spacer * 7.0625, // 113px
+  22: $spacer * 3.75,  // 60px 首頁頂尖師資
+  23: $spacer * 5.9375, // 95px 首頁頂尖師資
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -425,7 +427,8 @@ $aspect-ratios: (
   "1x1": 100%,
   "4x3": calc(3 / 4 * 100%),
   "16x9": calc(9 / 16 * 100%),
-  "21x9": calc(9 / 21 * 100%)
+  "21x9": calc(9 / 21 * 100%),
+  
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list
@@ -556,10 +559,10 @@ $table-cell-padding-x:        .5rem !default;
 $table-cell-padding-y-sm:     .25rem !default;
 $table-cell-padding-x-sm:     .25rem !default;
 
-$table-cell-vertical-align:   top !default;
+$table-cell-vertical-align:   middle !default; // NEW
 
-$table-color:                 $body-color !default;
-$table-bg:                    transparent !default;
+$table-color:                 $primary !default; // NEW
+$table-bg:                    $white !default; // NEW
 $table-accent-bg:             transparent !default;
 
 $table-th-font-weight:        null !default;

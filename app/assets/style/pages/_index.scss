@@ -1,9 +1,0 @@
-// 需要修正，看可不可以用BS內建
-.ms-n1{
-  @include media-breakpoint-up(md){
-    margin-left: -60px;
-  }
-  @include media-breakpoint-up(lg){
-    margin-left: -95px;
-  }
-}

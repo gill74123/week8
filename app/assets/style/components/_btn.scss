@@ -1,4 +1,11 @@
 .btn{
+    // layout
+    &-outline-primary{
+        &:hover{
+            color: $white !important;
+        }
+    }
+    // index banner
     &-secondary{
         &:hover{
             background-color: $primary;

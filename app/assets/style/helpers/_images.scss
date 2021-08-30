@@ -76,8 +76,13 @@
         }
     }
     &-course{
-        // width: 445px;
-        height: 445px;
+        height: 165px;
+        @include media-breakpoint-up(md){
+          height: 150px;
+        }
+        @include media-breakpoint-up(lg){
+          height: 445px;
+        }
     }
     &-plan{
         height: 243px;
