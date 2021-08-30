@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
-  // courseSwiper
+  // courseSwiper-index.html
   var swiper = new Swiper(".courseSwiper", {
     // 循環
     loop: true,
@@ -10,25 +10,45 @@ $(document).ready(function () {
     speed: 700,
     // 斷點可看見的slide數量
     breakpoints: {
-      768: {
-        slidesPerView: 1,
-        spaceBetween: 30
-      },
       992: {
         slidesPerView: 1.3,
         spaceBetween: 30
       }
     }
-  }); // commentSwiper
+  }); // commentSwiper-index.html
 
   var swiper = new Swiper(".commentSwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
+    // 循環
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 8,
+    grid: {
+      rows: 3,
+      fill: 'row'
+    },
+    navigation: {
+      nextEl: '.swiper-next',
+      prevEl: '.swiper-prev'
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        grid: {
+          rows: 2,
+          fill: 'row'
+        }
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        grid: {
+          rows: 2,
+          fill: 'row'
+        }
+      }
     }
-  }); // chooseCourseSwiper
+  }); // chooseCourseSwiper-reservation.html
 
   var swiper = new Swiper(".chooseCourseSwiper", {
     // 自動播放
@@ -54,7 +74,7 @@ $(document).ready(function () {
         spaceBetween: 20
       }
     }
-  }); // teacherSwiper
+  }); // teacherSwiper-course.html
 
   var swiper = new Swiper(".teacherSwiper", {
     // 循環
@@ -79,7 +99,7 @@ $(document).ready(function () {
         spaceBetween: 30
       }
     }
-  }); // recommendSwiper
+  }); // recommendSwiper-surroundings.html
 
   var swiper = new Swiper(".recommendSwiper", {
     // 循環
@@ -101,7 +121,7 @@ $(document).ready(function () {
         spaceBetween: 30
       }
     }
-  }); // datepicker
+  }); // datepicker-reservation-form.html
 
   var elem = document.querySelector('input[name="datepicker"]');
   var datepicker = new Datepicker(elem, {

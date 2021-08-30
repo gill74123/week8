@@ -48,7 +48,7 @@
         <ul class="d-flex align-items-center">
           <li><a href="course.html" class="link link-dark">課程介紹</a></li>
           <li><a href="sourndings.html" class="link link-dark">瑜珈空間</a></li>
-          <li><a href="#" class="link link-dark">當月課表</a></li>
+          <li><a href="curriculum.html" class="link link-dark">當月課表</a></li>
         </ul>
       </nav>
       <div class="d-none d-lg-block">
@@ -66,7 +66,7 @@
       <ul class="d-flex flex-column align-items-center">
         <li class="w-100"><a href="course.html" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">課程介紹</a></li>
         <li class="w-100"><a href="sourndings.html" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">瑜珈空間</a></li>
-        <li class="w-100"><a href="#" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">當月課表</a></li>
+        <li class="w-100"><a href="curriculum.html" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">當月課表</a></li>
         <li class="w-100"><a href="reservation.html" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">立即預約</a></li>
         <li class="w-100"><a href="contactUs.html" class="btn btn-outline-primary border-0 | fs-md-3 | py-3 w-100">聯絡我們</a></li>
       </ul>
@@ -148,7 +148,7 @@
         </div>
         <div class="row">
           <div class="offset-lg-0 col-lg-12 offset-md-2 col-md-10">
-            <div class="card flex-row align-items-center | p-5 py-md-12 px-md-13 mb-5 ms-n1">
+            <div class="card flex-row align-items-center | p-5 py-md-12 px-md-13 mb-5 ms-lg-n23 ms-md-n22">
               <img class="img-teacher-first | me-5 me-md-7" src="assets/images/teacher-1.png" alt="teacher-1.png">
               <div class="card-body | text-dark | ">
                 <h4 class="card-title | fs-3 | mb-1">Carol Tang 老師</h4>
@@ -200,7 +200,7 @@
       <div class="col-md-5 | order-md-3 order-1">
         <h3 class="fs-5 fw-medium | text-primary | mb-1">舒適空間、靜心放鬆</h3>
         <p class="fs-3 | text-third | mb-lg-8 mb-5">我們都渴望平靜安穩的生活，擁有一處能夠靜心的角落，安撫每天繁雜忙碌的心。</p>
-        <a href="#" class="d-flex align-items-center | text-primary | mb-md-0 mb-5">
+        <a href="sourndings.html" class="d-flex align-items-center | text-primary | mb-md-0 mb-5">
           <p>環境介紹</p>
           <span class="material-icons-outlined | ms-4">arrow_right_alt</span>
         </a>
@@ -216,13 +216,38 @@
       <div class="col-md-5 offset-md-1">
         <h3 class="fs-5 fw-medium | text-primary | mb-1">精心設計、課程多元</h3>
         <p class="fs-3 | text-third | mb-lg-8 mb-5">教師帶領多元課程，釋放壓力，與身心常見的緊繃不適溫柔和解。</p>
-        <a href="#" class="d-flex align-items-center | text-primary | mb-md-0 mb-5">
+        <a href="course.html" class="d-flex align-items-center | text-primary | mb-md-0 mb-5">
           <p>課程介紹</p>
           <span class="material-icons-outlined | ms-4">arrow_right_alt</span>
         </a>
       </div>
       <div class="col-md-6">
-        <div class="swiper courseSwiper">
+        <!-- mobile block -->
+        <div class="row gy-lg-0 gy-md-8 gy-5 | d-lg-none">
+          <div class="col-6">
+            <div class="card">
+              <img src="assets/images/card-4.jpg" class="card-img img-cover img-course" alt="card-4.jpg">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <img src="assets/images/card-5.jpg" class="card-img img-cover img-course" alt="card-5.jpg">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <img src="assets/images/card-6.jpg" class="card-img img-cover img-course" alt="card-6.jpg">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <img src="assets/images/card-7.jpg" class="card-img img-cover img-course" alt="card-7.jpg">
+            </div>
+          </div>
+        </div>
+
+        <!-- pc block -->
+        <div class="swiper courseSwiper | d-none d-lg-block">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="card">
@@ -277,7 +302,7 @@
             <h4 class="card-title | fs-3 | text-primary text-lg-center text-md-start text-center | mb-1">短期體驗</h4>
             <p class="card-text | fs-3 | text-third text-lg-center text-md-start text-center | mb-3">NT $1800 / 月</p>
             <p class="card-text | text-primary | mb-lg-12 mb-md-8 mb-12">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-            <a href="#" class="btn btn-third | text-white | stretched-link | py-3 | w-100">選擇課程</a>
+            <a href="reservation.html" class="btn btn-third | text-white | stretched-link | py-3 | w-100">選擇課程</a>
           </div>
         </div>
       </div>
@@ -288,7 +313,7 @@
             <h4 class="card-title | fs-3 | text-primary text-lg-center text-md-start text-center | mb-1">長期體驗</h4>
             <p class="card-text | fs-3 | text-third text-lg-center text-md-start text-center | mb-3">NT $5600 / 季</p>
             <p class="card-text | text-primary | mb-lg-12 mb-md-8 mb-12">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-            <a href="#" class="btn btn-third | text-white | stretched-link | py-3 | w-100">選擇課程</a>
+            <a href="reservation.html" class="btn btn-third | text-white | stretched-link | py-3 | w-100">選擇課程</a>
           </div>
         </div>
       </div>
@@ -298,296 +323,146 @@
 
 <!-- 聽聽他們怎麼說 -->
 <section class="bg-secondary | pt-md-12 pb-md-16 pt-11 pb-13">
-  <div class="container">
+  <div class="container ">
     <h3 class="fs-5 fw-medium | text-primary text-center | mb-md-11 mb-8">聽聽他們怎麼說</h3>
     <div class="swiper commentSwiper">
-      <ul class="swiper-wrapper row">
-        <li class="col-lg-4 col-md-6 | mb-md-5 mb-3">
-          <div class="swiper-slide">
-            <div class="card flex-row align-items-center | p-5">
-              <img class="img-user | me-7" src="assets/images/user-1.png" alt="user-1.png">
-              <div class="card-body | text-third | p-0">
-                <div class="card-text">
-                  <div class="d-flex  align-items-center | mb-4">
-                    <p>Joanne</p>
-                    <p class="fs-1 ms-3">Oct 17 2020</p>
-                  </div>
-                  <div class="mb-4">
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                  </div>
-                  <p class="">服務很好、設備優良！</p>
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="card flex-row align-items-center | p-5">
+            <img class="img-user | me-7" src="assets/images/user-1.png" alt="user-1.png">
+            <div class="card-body | text-third | p-0">
+              <div class="card-text">
+                <div class="d-flex  align-items-center | mb-4">
+                  <p>Joanne</p>
+                  <p class="fs-1 ms-3">Oct 17 2020</p>
                 </div>
+                <div class="mb-4">
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                </div>
+                <p>服務很好、設備優良！</p>
               </div>
             </div>
           </div>
         </li>
-        <li class="col-lg-4 col-md-6 | mb-md-5 mb-3">
-          <div class="swiper-slide">
-            <div class="card flex-row align-items-center | p-5 | w-100">
-              <img class="img-user | me-7" src="assets/images/user-2.png" alt="user-2.png">
-              <div class="card-body | text-third | p-0">
-                <div class="card-text">
-                  <div class="d-flex  align-items-center | mb-4">
-                    <p>穎旻</p>
-                    <p class="fs-1 ms-3">Oct 17 2020</p>
-                  </div>
-                  <div class="mb-4">
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                  </div>
-                  <p class="">上課後身體健康很多</p>
+        <li class="swiper-slide">
+          <div class="card flex-row align-items-center | p-5 | w-100">
+            <img class="img-user | me-7" src="assets/images/user-2.png" alt="user-2.png">
+            <div class="card-body | text-third | p-0">
+              <div class="card-text">
+                <div class="d-flex  align-items-center | mb-4">
+                  <p>穎旻</p>
+                  <p class="fs-1 ms-3">Oct 17 2020</p>
                 </div>
+                <div class="mb-4">
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                </div>
+                <p>上課後身體健康很多</p>
               </div>
             </div>
           </div>
         </li>
-        <li class="col-lg-4 col-md-6 | mb-md-5 mb-3">
-          <div class="swiper-slide">
-            <div class="card flex-row align-items-center | p-5 | w-100">
-              <img class="img-user | me-7" src="assets/images/user-3.png" alt="user-3.png">
-              <div class="card-body | text-third | p-0">
-                <div class="card-text">
-                  <div class="d-flex  align-items-center | mb-4">
-                    <p>子琪</p>
-                    <p class="fs-1 ms-3">Oct 17 2020</p>
-                  </div>
-                  <div class="mb-4">
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                  </div>
-                  <p class="">上課很有趣！</p>
+        <li class="swiper-slide">
+          <div class="card flex-row align-items-center | p-5 | w-100">
+            <img class="img-user | me-7" src="assets/images/user-3.png" alt="user-3.png">
+            <div class="card-body | text-third | p-0">
+              <div class="card-text">
+                <div class="d-flex  align-items-center | mb-4">
+                  <p>子琪</p>
+                  <p class="fs-1 ms-3">Oct 17 2020</p>
                 </div>
+                <div class="mb-4">
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                </div>
+                <p>上課很有趣！</p>
               </div>
             </div>
           </div>
         </li>
-        <li class="col-lg-4 col-md-6 | mb-md-0 mb-3">
-          <div class="swiper-slide">
-            <div class="card flex-row align-items-center | p-5 | w-100">
-              <img class="img-user | me-7" src="assets/images/user-4.png" alt="user-4.png">
-              <div class="card-body | text-third | p-0">
-                <div class="card-text">
-                  <div class="d-flex  align-items-center | mb-4">
-                    <p>葉子</p>
-                    <p class="fs-1 ms-3">Oct 17 2020</p>
-                  </div>
-                  <div class="mb-4">
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                  </div>
-                  <p class="">老師的教學很專業</p>
+        <li class="swiper-slide">
+          <div class="card flex-row align-items-center | p-5 | w-100">
+            <img class="img-user | me-7" src="assets/images/user-4.png" alt="user-4.png">
+            <div class="card-body | text-third | p-0">
+              <div class="card-text">
+                <div class="d-flex  align-items-center | mb-4">
+                  <p>葉子</p>
+                  <p class="fs-1 ms-3">Oct 17 2020</p>
                 </div>
+                <div class="mb-4">
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                </div>
+                <p>老師的教學很專業</p>
               </div>
             </div>
           </div>
         </li>
-        <li class="col-lg-4 col-md-6 | mb-md-0 mb-3">
-          <div class="swiper-slide">
-            <div class="card flex-row align-items-center | p-5 | w-100">
-              <img class="img-user | me-7" src="assets/images/user-5.png" alt="user-5.png">
-              <div class="card-body | text-third | p-0">
-                <div class="card-text">
-                  <div class="d-flex  align-items-center | mb-4">
-                    <p></p>Ray</p>
-                    <p class="fs-1 ms-3">Oct 17 2020</p>
-                  </div>
-                  <div class="mb-4">
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                  </div>
-                  <p class="">很舒壓</p>
+        <li class="swiper-slide">
+          <div class="card flex-row align-items-center | p-5 | w-100">
+            <img class="img-user | me-7" src="assets/images/user-5.png" alt="user-5.png">
+            <div class="card-body | text-third | p-0">
+              <div class="card-text">
+                <div class="d-flex  align-items-center | mb-4">
+                  <p></p>Ray</p>
+                  <p class="fs-1 ms-3">Oct 17 2020</p>
                 </div>
+                <div class="mb-4">
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                </div>
+                <p>很舒壓</p>
               </div>
             </div>
           </div>
         </li>
-        <li class="col-lg-4 col-md-6">
-          <div class="swiper-slide">
-            <div class="card flex-row align-items-center | p-5 | w-100">
-              <img class="img-user | me-7" src="assets/images/uset-6.png" alt="user-6.png">
-              <div class="card-body | text-third | p-0">
-                <div class="card-text">
-                  <div class="d-flex  align-items-center | mb-4">
-                    <p>俊儀</p>
-                    <p class="fs-1 ms-3">Oct 17 2020</p>
-                  </div>
-                  <div class="mb-4">
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                    <span class="material-icons-outlined">star</span>
-                  </div>
-                  <p class="">很舒壓</p>
+        <li class="swiper-slide">
+          <div class="card flex-row align-items-center | p-5 | w-100">
+            <img class="img-user | me-7" src="assets/images/uset-6.png" alt="user-6.png">
+            <div class="card-body | text-third | p-0">
+              <div class="card-text">
+                <div class="d-flex  align-items-center | mb-4">
+                  <p>俊儀</p>
+                  <p class="fs-1 ms-3">Oct 17 2020</p>
                 </div>
+                <div class="mb-4">
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                  <span class="material-icons-outlined">star</span>
+                </div>
+                <p>很舒壓</p>
               </div>
             </div>
           </div>
         </li>
       </ul>
-    </div>
-
-    <!-- 
-    <div class="swiper-container-a commentSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide-a">
-          <div class="row">
-            <div class="col-4">
-              <div class="card flex-row align-items-center | p-5">
-                <img class="img-user | me-7" src="assets/images/user-1.png" alt="user-1.png">
-                <div class="card-body | text-third | p-0">
-                  <div class="card-text">
-                    <div class="d-flex  align-items-center | mb-4">
-                      <p class="">Joanne</p>
-                      <p class="fs-1 ms-3">Oct 17 2020</p>
-                    </div>
-                    <div class="mb-4">
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                    </div>
-                    <p class="">服務很好、設備優良！</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 ">
-              <div class="card flex-row align-items-center | p-5">
-                <img class="img-user" src="assets/images/user-1.png" alt="user-1.png">
-                <div class="card-body | text-third | p-0">
-                  <div class="card-text">
-                    <div class="d-flex justify-content-center align-items-center | mb-4">
-                      <p class="">Joanne</p>
-                      <p class="fs-1 ms-3">Oct 17 2020</p>
-                    </div>
-                    <div class="mb-4">
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                    </div>
-                    <p>服務很好、設備優良！</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card flex-row align-items-center | p-5">
-                <img class="img-user" src="assets/images/user-1.png" alt="user-1.png">
-                <div class="card-body | text-third | p-0">
-                  <div class="card-text">
-                    <div class="d-flex justify-content-center align-items-center | mb-4">
-                      <p class="">Joanne</p>
-                      <p class="fs-1 ms-3">Oct 17 2020</p>
-                    </div>
-                    <div class="mb-4">
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                    </div>
-                    <p>服務很好、設備優良！</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide-a">
-          <div class="row ">
-            <div class="col-4">
-              <div class="card flex-row align-items-center | p-5">
-                <img class="img-user" src="assets/images/user-1.png" alt="user-1.png">
-                <div class="card-body | text-third | p-0">
-                  <div class="card-text">
-                    <div class="d-flex justify-content-center align-items-center | mb-4">
-                      <p class="">Joanne</p>
-                      <p class="fs-1 ms-3">Oct 17 2020</p>
-                    </div>
-                    <div class="mb-4">
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                    </div>
-                    <p>服務很好、設備優良！</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card flex-row align-items-center | p-5">
-                <img class="img-user" src="assets/images/user-1.png" alt="user-1.png">
-                <div class="card-body | text-third | p-0">
-                  <div class="card-text">
-                    <div class="d-flex justify-content-center align-items-center | mb-4">
-                      <p class="">Joanne</p>
-                      <p class="fs-1 ms-3">Oct 17 2020</p>
-                    </div>
-                    <div class="mb-4">
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                    </div>
-                    <p>服務很好、設備優良！</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card flex-row align-items-center | p-5">
-                <img class="img-user" src="assets/images/user-1.png" alt="user-1.png">
-                <div class="card-body | text-third | p-0">
-                  <div class="card-text">
-                    <div class="d-flex justify-content-center align-items-center | mb-4">
-                      <p class="">Joanne</p>
-                      <p class="fs-1 ms-3">Oct 17 2020</p>
-                    </div>
-                    <div class="mb-4">
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                      <span class="material-icons-outlined">star</span>
-                    </div>
-                    <p>服務很好、設備優良！</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide-a">Slide 3</div>
-        <div class="swiper-slide-a">Slide 4</div>
-        <div class="swiper-slide-a">Slide 5</div>
-        <div class="swiper-slide-a">Slide 6</div>
+      <div class="d-flex d-md-none justify-content-between align-items-center | p-3">
+        <a href="#" class="swiper-prev">
+          <span class="material-icons-outlined | fs-9">west</span>
+        </a>
+        <a href="#" class="swiper-next">
+          <span class="material-icons-outlined | fs-9">east</span>
+        </a>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
-     -->
   </div>
 </section>
 
@@ -606,9 +481,9 @@
         <div>
           <div class="img-footer-logo | mb-3">footer-logo</div>
           <ul>
-            <li class="mb-3"><a href="#" class="fw-light text-white | link link-white | p-0">課程介紹</a></li>
-            <li class="mb-3"><a href="#" class="fw-light text-white | link link-white | p-0">瑜珈空間</a></li>
-            <li class="mb-3 mb-md-0"><a href="#" class="fw-light text-white | link link-white | p-0">當月課表</a></li>
+            <li class="mb-3"><a href="course.html" class="fw-light text-white | link link-white | p-0">課程介紹</a></li>
+            <li class="mb-3"><a href="sourndings.html" class="fw-light text-white | link link-white | p-0">瑜珈空間</a></li>
+            <li class="mb-3 mb-md-0"><a href="curriculum.html" class="fw-light text-white | link link-white | p-0">當月課表</a></li>
             <li class="d-md-none">
               <p class="d-md-none | text-white">© 2021. All Rights Reserved.</p>
             </li>
@@ -625,10 +500,10 @@
     </footer>
 
     <!-- 右側釘選社群 -->
-    <ul class="d-none d-lg-block | position-fixed top-50 end-0 translate-middle-y | pe-1">
-      <li class="mb-3"><a href="#"><i class="fab fa-facebook | fs-8 text-primary"></i></a></li>
-      <li class="mb-3"><a href="#"><i class="fab fa-instagram | fs-8 text-primary"></i></a></li>
-      <li class=""><a href="#"><i class="fab fa-line | fs-8 text-primary"></i></a></li>
+    <ul class="d-none d-lg-block | position-fixed top-50 end-0 translate-middle-y | me-3">
+      <li class="mb-3"><a href="#"><i class="fab fa-facebook | fs-8 | bg-white rounded-circle | text-primary"></i></a></li>
+      <li class="mb-3"><a href="#"><i class="fab fa-instagram | fs-8 | d-inline bg-white rounded-3 | text-primary"></i></a></li>
+      <li><a href="#"><i class="fab fa-line | fs-8 | d-inline bg-white rounded-3 | text-primary"></i></a></li>
     </ul>
 
     <script src="./assets/js/vendors.js"></script>
