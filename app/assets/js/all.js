@@ -5,7 +5,7 @@ $(document).ready(function () {
     loop: true,
 
     // 自動播放
-    // autoplay: true,
+    autoplay: true,
     speed: 700,
 
 
@@ -56,8 +56,11 @@ $(document).ready(function () {
 
   // chooseCourseSwiper-reservation.html
   var swiper = new Swiper(".chooseCourseSwiper", {
+    // 循環
+    loop: false,
+
     // 自動播放
-    // autoplay: true,
+    autoplay: true,
     speed: 700,
 
     scrollbar: {
@@ -89,7 +92,7 @@ $(document).ready(function () {
     loop: false,
 
     // 自動播放
-    // autoplay: true,
+    autoplay: true,
     speed: 700,
 
     breakpoints: {
@@ -117,7 +120,7 @@ $(document).ready(function () {
     loop: false,
 
     // 自動播放
-    // autoplay: true,
+    autoplay: true,
     speed: 700,
 
     breakpoints: {
@@ -144,5 +147,9 @@ $(document).ready(function () {
     nextArrow: '>',
     prevArrow: '<'
   });
+});
 
+// AOS
+AOS.init({
+  once: true
 });

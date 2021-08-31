@@ -6,7 +6,10 @@
         background-image: url(../images/bg-banner.jpeg);
         background-size: cover;
         background-position: center bottom;
-        background-attachment: fixed; // 讓它有視覺差的效果
+        background-attachment: initial;
+        @include media-breakpoint-up(md){
+          background-attachment: fixed; // 讓它有視覺差的效果
+        }
     }
     &-teaching{
         width: 100%;

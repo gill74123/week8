@@ -591,7 +591,22 @@ $utilities: map-merge(
         visible: visible,
         invisible: hidden,
       )
+    ),
+
+    // z-index NEW
+    "z-index": (
+      property: z-index,
+      class: z-index,
+      values: (
+        0: 0,
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5
+      )
     )
+
     // scss-docs-end utils-visibility
   ),
   $utilities
