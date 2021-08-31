@@ -6,7 +6,7 @@ $(document).ready(function () {
     // 循環
     loop: true,
     // 自動播放
-    // autoplay: true,
+    autoplay: true,
     speed: 700,
     // 斷點可看見的slide數量
     breakpoints: {
@@ -51,8 +51,10 @@ $(document).ready(function () {
   }); // chooseCourseSwiper-reservation.html
 
   var swiper = new Swiper(".chooseCourseSwiper", {
+    // 循環
+    loop: false,
     // 自動播放
-    // autoplay: true,
+    autoplay: true,
     speed: 700,
     scrollbar: {
       el: ".swiper-scrollbar"
@@ -80,7 +82,7 @@ $(document).ready(function () {
     // 循環
     loop: false,
     // 自動播放
-    // autoplay: true,
+    autoplay: true,
     speed: 700,
     breakpoints: {
       0: {
@@ -105,7 +107,7 @@ $(document).ready(function () {
     // 循環
     loop: false,
     // 自動播放
-    // autoplay: true,
+    autoplay: true,
     speed: 700,
     breakpoints: {
       0: {
@@ -130,5 +132,9 @@ $(document).ready(function () {
     nextArrow: '>',
     prevArrow: '<'
   });
+}); // AOS
+
+AOS.init({
+  once: false
 });
 //# sourceMappingURL=all.js.map
