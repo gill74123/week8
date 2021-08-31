@@ -135,6 +135,6 @@ $(document).ready(function () {
 }); // AOS
 
 AOS.init({
-  once: false
+  once: true
 });
 //# sourceMappingURL=all.js.map

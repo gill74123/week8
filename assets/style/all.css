@@ -21724,8 +21724,14 @@ fieldset:disabled .btn {
   width: 100%;
   background-image: url(../images/bg-banner.jpeg);
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center bottom;
+  background-attachment: initial;
+}
+
+@media (min-width: 768px) {
+  .bg-banner {
+    background-attachment: fixed;
+  }
 }
 
 .bg-teaching {
