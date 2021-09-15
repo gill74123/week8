@@ -21978,6 +21978,21 @@ fieldset:disabled .btn {
   color: #fff !important;
 }
 
+.scrollbar::-webkit-scrollbar {
+  height: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: rgba(144, 122, 123, 0.7);
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 10px #f8f9fa;
+          box-shadow: inset 0 0 10px #f8f9fa;
+}
+
 html, body {
   overflow-x: hidden;
 }
@@ -22130,21 +22145,6 @@ dl {
 .img-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.scrollbar::-webkit-scrollbar {
-  height: 5px;
-}
-
-.scrollbar::-webkit-scrollbar-thumb {
-  border-radius: 3px;
-  background-color: rgba(144, 122, 123, 0.7);
-}
-
-.scrollbar::-webkit-scrollbar-track {
-  border-radius: 3px;
-  -webkit-box-shadow: inset 0 0 10px #f8f9fa;
-          box-shadow: inset 0 0 10px #f8f9fa;
 }
 
 /*# sourceMappingURL=all.css.map */
