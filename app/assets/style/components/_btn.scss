@@ -1,15 +1,16 @@
-.btn{
-    // layout
-    &-outline-primary{
-        &:hover{
-            color: $white !important;
-        }
+.btn {
+  // layout
+  &-outline-primary {
+    &:hover {
+      color: $white  !important;
     }
-    // index banner
-    &-secondary{
-        &:hover{
-            background-color: $primary;
-            color: $white !important;
-        }
+  }
+
+  // index banner
+  &-secondary {
+    &:hover {
+      background-color: $primary;
+      color: $white  !important;
     }
+  }
 }

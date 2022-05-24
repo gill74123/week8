@@ -1,7 +1,7 @@
-.form-control{
+.form-control {
+  color: $third;
+  border: 1px solid $third;
+  &::placeholder {
     color: $third;
-    border: 1px solid $third;
-    &::placeholder{
-        color: $third;
-    }
+  }
 }

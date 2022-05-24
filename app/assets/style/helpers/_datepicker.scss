@@ -1,11 +1,14 @@
-.datepicker-cell.selected, .datepicker-cell.selected:hover{
-    background-color: $primary;
-    color: $white;
-    font-weight: $font-weight-bold;
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+  background-color: $primary;
+  color: $white;
+  font-weight: $font-weight-bold;
 }
-.days{
-    color: $primary;
+
+.days {
+  color: $primary;
 }
-.days-of-week{
-    color: $third;
+
+.days-of-week {
+  color: $third;
 }

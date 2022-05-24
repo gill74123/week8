@@ -39,12 +39,12 @@
 </head>
 
 <body>
-  <header class="position-relative | bg-secondary | position-sticky top-0 z-index-5 | border-bottom border-third | py-7">
+  <header class="position-relative bg-secondary position-sticky top-0 z-index-5 border-bottom border-third py-7">
     <div class="container d-flex justify-content-between align-items-center">
       <a href="index.html">
         <h1 class="img-header-logo">logo</h1>
       </a>
-      <nav class="d-none d-lg-block | position-absolute start-50 translate-middle-x">
+      <nav class="d-none d-lg-block position-absolute start-50 translate-middle-x">
         <ul class="d-flex align-items-center">
           <li><a href="course.html" class="link link-dark">課程介紹</a></li>
           <li><a href="sourndings.html" class="link link-dark">瑜珈空間</a></li>
@@ -52,78 +52,80 @@
         </ul>
       </nav>
       <div class="d-none d-lg-block">
-        <a href="reservation.html" class="btn btn-outline-primary rounded-4 | py-3 me-5">立即預約</a>
-        <a href="contactUs.html" class="btn btn-outline-primary rounded-4 | py-3">聯絡我們</a>
+        <a href="reservation.html" class="btn btn-outline-primary rounded-4 py-3 me-5">立即預約</a>
+        <a href="contactUs.html" class="btn btn-outline-primary rounded-4 py-3">聯絡我們</a>
       </div>
 
       <!-- mobile block collapse button -->
-      <span class="material-icons-outlined | fs-9 text-primary | d-lg-none" data-bs-toggle="collapse" href="#menuList"
+      <span class="material-icons-outlined fs-9 text-primary d-lg-none" data-bs-toggle="collapse" href="#menuList"
         role="button" aria-expanded="false" aria-controls="collapseExample">reorder</span>
     </div>
 
     <!-- mobile block collapse -->
-    <nav class="collapse border-top border-third | mt-7 mb-n7" id="menuList">
+    <nav class="collapse border-top border-third mt-7 mb-n7" id="menuList">
       <ul class="d-flex flex-column align-items-center">
-        <li class="w-100"><a href="course.html" class="btn btn-outline-primary border-0 | fs-md-4 | py-3 w-100">課程介紹</a></li>
-        <li class="w-100"><a href="sourndings.html" class="btn btn-outline-primary border-0 | fs-md-4 | py-3 w-100">瑜珈空間</a></li>
-        <li class="w-100"><a href="curriculum.html" class="btn btn-outline-primary border-0 | fs-md-4 | py-3 w-100">當月課表</a></li>
-        <li class="w-100"><a href="reservation.html" class="btn btn-outline-primary border-0 | fs-md-4 | py-3 w-100">立即預約</a></li>
-        <li class="w-100"><a href="contactUs.html" class="btn btn-outline-primary border-0 | fs-md-4 | py-3 w-100">聯絡我們</a></li>
+        <li class="w-100"><a href="course.html" class="btn btn-outline-primary border-0 fs-md-4 py-3 w-100">課程介紹</a></li>
+        <li class="w-100"><a href="sourndings.html" class="btn btn-outline-primary border-0 fs-md-4 py-3 w-100">瑜珈空間</a></li>
+        <li class="w-100"><a href="curriculum.html" class="btn btn-outline-primary border-0 fs-md-4 py-3 w-100">當月課表</a></li>
+        <li class="w-100"><a href="reservation.html" class="btn btn-outline-primary border-0 fs-md-4 py-3 w-100">立即預約</a></li>
+        <li class="w-100"><a href="contactUs.html" class="btn btn-outline-primary border-0 fs-md-4 py-3 w-100">聯絡我們</a></li>
       </ul>
     </nav>
   </header>
 
   <%- contents %>
 
-    <footer class="bg-primary | py-11">
-      <div class="container | pb-8 pb-md-11">
+    <footer class="bg-primary py-11">
+      <div class="container pb-8 pb-md-11">
         <div class="row align-items-center">
-          <div class="col-lg-6 | mb-lg-0 mb-3">
-            <p class="fs-5 fw-regular fw-md-medium text-white | pb-3 pb-md-0" data-aos="fade-right" data-aos-duration="800">現在訂閱，獲得課程優惠碼！</p>
+          <div class="col-lg-6 mb-lg-0 mb-3">
+            <p class="fs-5 fw-regular fw-md-medium text-white pb-3 pb-md-0" data-aos="fade-right" data-aos-duration="800">現在訂閱，獲得課程優惠碼！</p>
           </div>
           <div class="col-lg-4 offset-lg-2 col-md-6">
             <div class="input-group" data-aos="fade-left" data-aos-duration="800">
-              <input type="email" class="form-control | py-3" placeholder="輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <button class="btn btn-third | text-white | py-3" type="button" id="button-addon2">訂閱</button>
+              <input type="email" class="form-control py-3" placeholder="輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-third text-white py-3" type="button" id="button-addon2">訂閱</button>
             </div>
           </div>
         </div>
       </div>
-
-      <hr class="bg-white | m-0 mb-11">
-
-      <div class="container d-flex justify-content-between | position-relative">
+      <hr class="bg-white m-0 mb-11">
+      <div class="container d-flex justify-content-between position-relative">
         <div>
           <a href="index.html">
-            <div class="img-footer-logo | mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="500" data-aos-offset="0">footer-logo</div>
+            <div class="img-footer-logo mb-3" data-aos="fade-right" data-aos-delay="100" data-aos-duration="500" data-aos-offset="0">footer-logo</div>
           </a>
           <ul>
-            <li class="mb-3"><a href="course.html" class="fw-light text-white | link link-white | p-0" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800" data-aos-offset="10">課程介紹</a></li>
-            <li class="mb-3"><a href="sourndings.html" class="fw-light text-white | link link-white | p-0" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800" data-aos-offset="10">瑜珈空間</a></li>
-            <li class="mb-3 mb-md-0"><a href="curriculum.html" class="fw-light text-white | link link-white | p-0" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800" data-aos-offset="10">當月課表</a></li>
+            <li class="mb-3"><a href="course.html" class="fw-light text-white link link-white p-0" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800" data-aos-offset="10">課程介紹</a></li>
+            <li class="mb-3"><a href="sourndings.html" class="fw-light text-white link link-white p-0" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800" data-aos-offset="10">瑜珈空間</a></li>
+            <li class="mb-3 mb-md-0"><a href="curriculum.html" class="fw-light text-white link link-white p-0" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800" data-aos-offset="10">當月課表</a></li>
             <li class="d-md-none">
-              <p class="d-md-none | text-white">© 2021. All Rights Reserved.</p>
+              <p class="d-md-none text-white">© 2021. All Rights Reserved.</p>
             </li>
           </ul>
         </div>
         <ul class="d-flex">
-          <li data-aos="fade-left" data-aos-duration="800"><a href="#"><i class="fab fa-facebook | fs-4 text-white | link link-scale | p-0"></i></a></li>
-          <li class="ms-3" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800"><a href="#"><i class="fab fa-instagram | fs-4 text-white | link link-scale | p-0"></i></a></li>
-          <li class="ms-3" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800"><a href="#"><i class="fab fa-line | fs-4 text-white | link link-scale | p-0"></i></a></li>
+          <li data-aos="fade-left" data-aos-duration="800">
+            <a href="#"><i class="fab fa-facebook fs-4 text-white link link-media p-0"></i></a>
+          </li>
+          <li class="ms-3" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
+            <a href="#"><i class="fab fa-instagram fs-4 text-white link link-media p-0"></i></a>
+          </li>
+          <li class="ms-3" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+            <a href="#"><i class="fab fa-line fs-4 text-white link link-media p-0"></i></a>
+          </li>
         </ul>
-        <p class="d-none d-md-block | text-white | position-absolute bottom-0 start-50 translate-middle-x">© 2021. All
+        <p class="d-none d-md-block text-white position-absolute bottom-0 start-50 translate-middle-x">© 2021. All
           Rights Reserved.</p>
       </div>
     </footer>
 
     <!-- 右側釘選社群 -->
-    <ul class="d-none d-lg-block | position-fixed top-50 end-0 translate-middle-y z-index-5 | me-3">
-      <li class="mb-3"><a href="#"><i class="fab fa-facebook | fs-8 | text-primary | link-scale"></i></a></li>
-      <li class="mb-3"><a href="#"><i class="fab fa-instagram | fs-8 | text-primary | link-scale"></i></a></li>
-      <li><a href="#"><i class="fab fa-line | fs-8 | text-primary | link-scale"></i></a></li>
+    <ul class="d-none d-lg-block position-fixed top-50 end-0 translate-middle-y z-index-5 me-4">
+      <li class="mb-3"><a href="#"><i class="fab fa-facebook fs-8 text-primary link-media"></i></a></li>
+      <li class="mb-3"><a href="#"><i class="fab fa-instagram fs-8 text-primary link-media"></i></a></li>
+      <li><a href="#"><i class="fab fa-line fs-8 text-primary link-media"></i></a></li>
     </ul>
-
-
 
     <script src="./assets/js/vendors.js"></script>
 
